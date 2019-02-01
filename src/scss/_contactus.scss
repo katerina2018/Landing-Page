@@ -1,0 +1,139 @@
+.contactus{
+    background-color: $color-title;
+    min-height: 1030px;
+    padding-top: 124px;
+    font-family: $font-OpenSans;
+    text-align: center;
+    &__title{
+        h2{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 1;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            letter-spacing: -0.04em;
+            color: $color-suptitle;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1;
+            padding: 12px 30px;
+            color:$color-textParagraf;
+            letter-spacing: 0.0em;
+        }
+    }
+    &__contact{
+        background-color: #FFF;
+        min-height: 566px;
+        text-align: left;
+        padding: 39px;
+        margin-top: 66px;
+        max-height: 565px;
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            padding-left: 48px;
+            letter-spacing: -0.06em;
+            color: #e74c3c;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1;
+            padding: 11px 52px;
+            color: #999999;
+            letter-spacing: 0.0em;
+        }
+        a{
+            font-size: 18px;
+            line-height: 1;
+            padding: 11px 12px;
+            margin-left: 40px;
+            color: #999999;
+            letter-spacing: 0.0em;
+            text-decoration: none;
+            transition: .3s;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    &__gutter{
+        margin-top: 54px;
+    }
+    &__form{
+        background-color: #FFF;
+        text-align: left;
+        margin-top: 66px;
+        padding: 60px 95px 65px;
+        max-height: 565px;
+        .form__item{
+            position: relative;
+            &:focus-within label{
+                color: #e74c3c;
+            }
+            &:focus-within input{
+                border-bottom: 1px solid $color-suptitle;
+            }
+            &:focus-within textarea{
+                border-bottom: 1px solid $color-suptitle;
+            }
+
+        }
+       
+        label{
+            font-size: 14px;
+            line-height: 1;
+            color: #999999;
+            letter-spacing: 0.07em;
+            font-weight: 700;
+            display: block;
+            transition: .3s;
+            padding:10px;
+            }
+        input{
+            
+            width: 100%;
+            padding: 12px 20px;
+            display: inline-block;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+           height: 100%;
+            
+
+          }
+          textarea{
+            resize: none;
+            width: 100%;
+            height: 87px;
+            padding: 12px 20px;
+            margin: 0px 0px 20px;
+            display: inline-block;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+          }
+    }
+}
+@media screen and (max-width: $small){
+    .contactus{
+        padding-top: 60px;
+        &__contact{
+            padding: 20px;
+            margin-top: 30px;
+        }
+        &__form{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+    }
+
+}

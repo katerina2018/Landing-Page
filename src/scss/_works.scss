@@ -1,0 +1,157 @@
+.works{
+    text-align: center;
+    min-height: 763px;
+    padding-top: 124px;
+    font-family: $font-OpenSans;
+    .hidden{
+        display: none;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1;
+        margin-bottom: 12px;
+        margin-top: 10px;
+        letter-spacing: 0.0em;
+        color: $color-suptitle;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 22px;
+        margin-top: 10px;
+        letter-spacing: 0.02em;
+        color: $color-textParagraf;
+        
+    }
+    &__menu{
+        
+        margin-right: auto;
+        margin-top: 42px;
+    }
+        
+    &__list{
+        list-style: none;
+        padding-top: 9px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.0em;
+        display: inline-block;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    &__item{
+        float: left;
+        
+        &:not(:last-child){
+            &:after{
+                content:'/';
+                padding-left: 18px;
+    
+            }
+        }
+        &:hover .works__link{
+            color: $color-secondary;
+        }
+    }   
+    &__link{
+        color: $color-textParagraf;
+        text-decoration: none;
+        padding: 10px 9px;
+        position: relative;
+        line-height: 3;
+        &:hover:after{
+        opacity: .9;
+
+        }
+        &--active{
+            color: $color-secondary;
+            font-weight: 600;
+            line-height: 3;
+            &:after{
+            color: $color-secondary;
+            }
+        }
+    }
+    &__kart{
+        margin-top: 30px;
+    }
+    &__box{
+        position: relative; 
+        img{
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            
+        }
+        &:hover .works__text{
+            opacity: 0.8;
+        }
+
+    }
+    &__text{
+        background-color:$color-secondary; 
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0px;
+        left:0px;
+        text-align: left;
+        padding-left: 50px;
+        transition: .3s;
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #FFF;
+            position: relative;
+            margin-bottom: 12px;
+            &::before{
+               position: absolute;
+               top: -31px;
+               left: 0px;
+               width: 44px;
+               height: 4px;
+               background-color: $color-white;
+               display: block;
+               content:'';
+            }
+        }
+        p{
+            color: $color-white;
+        }
+    
+    }
+        &__content{
+            position: absolute;
+            bottom: 15px;
+        }
+        
+    
+
+    
+}
+@media screen and (max-width: $small){
+    .works{
+        margin-top: 0px;
+        padding-top: 70px;
+        &__menu{
+            margin-top: 0px;
+        }
+        &__link{
+            line-height: 3;
+            &--active{
+                line-height: 3;
+                
+            }
+        }
+    }
+
+
+
+}
+
+  
+  

@@ -1,0 +1,105 @@
+.services{
+    background-image: linear-gradient(to right, #202020 55%, transparent 45%, transparent 45%), url(../img/image_service.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    min-height: 763px;
+    margin-top: 143px;
+    font-family: $font-OpenSans;
+    text-align: right;
+    h2{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1;
+        margin-bottom: 28px;
+        margin-top: 146px;
+        padding-right: 119px;
+        letter-spacing: 0.07em;
+        color: $color-title;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 2px;
+            right: 85px;
+            content: '';
+            width: 6px;
+            height: 37px;
+            background-color: $color-secondary;
+            display: block;
+        }
+    }
+    &__blank{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 38px;
+
+    }
+    &__text{
+        h4{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 10px;
+            margin-top: 8px;
+            padding-left: 18px;
+            letter-spacing: 0.0em;
+            color: $color-secondary;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 14px;
+            margin-top: 10px;
+            padding-left: 18px;
+            letter-spacing: -0.04em;
+            color: $color-textParagraf;
+        }
+    }
+    &__icon{
+        min-width: 64px;
+        max-height: 64px;
+        border-radius: 50%;
+        background-color: rgb( 244, 245, 249 );
+        position: relative;
+        font-size: 22px;
+        color: $color-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        margin-right: -22px;
+        margin-left: 42px;
+        &::before{
+            position: absolute;
+            top: -4.5px;
+            left: -4.5px;
+            width: 73px;
+            height: 73px;
+            border-radius: 50%;
+            background-color: $color-white;
+            opacity: 0.251;
+            content: '';
+            display: block;
+        }
+    }
+    
+}
+@media screen and (max-width: $small){
+    .services{
+        background: #202020;
+        margin-top: 60px;
+        h2{
+            margin-top: 60px; 
+        }
+        &__icon {
+            margin-right: 22px;
+            margin-left: 30px;
+        }
+
+    }
+
+}
+
+
+  

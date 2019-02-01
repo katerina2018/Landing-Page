@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        //- script(src="./js/jquery.js")
+        link(rel="stylesheet", href="./css/styles.css")
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700i|Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
+        //- script(src="./js/script_video.js")
+    body
+        .up__arrow#up__arrow
+            a(href="#HOME")
+                <i class="fas fa-chevron-up"></i> 
+            
+        header.header#HOME
+            <div class="homepage-hero-module">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline class="fillWidth">
+                        <source src="./video/Orange-Ripple.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                        <source src="./video/Orange-Ripple.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    </video>
+                    .header__bg
+                    .header__content
+                        .container
+                            .row
+                                .col.col-12
+                                    .nav
+                                        .logo
+                                            a(href="#")
+                                                img(src="./img/Logo.png", alt="", srcset="")
+                                        nav.menu
+                                            button.nav__burger(onclick="burgerFunction(this)")
+                                                span.bar1
+                                                span.bar2
+                                                span.bar3
+                                            ul.menu__list
+                                                each val, index in ['HOME', 'ABOUT_US', 'HISTORY', 'SERVICES', 'PORTFOLIO', 'STUDY', 'BLOG', 'TEAM', 'CONTACT']
+                                                    if (index == 0)
+                                                        li.menu__item: a(href=`#${val}`).menu__link.menu__link--active= val
+                                                    else
+                                                        li.menu__item: a(href=`#${val}`).menu__link.menu__link= val
+                                        
+                                    .heading
+                                    
+                                        
+
+                                        h3 Our Clients Are Our First Priority
+                                        h1 WELCOME TO BINO
+                                        .severance 
+                                        p.col.col-7.col-sm-12 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        .col.col-7.col-sm-12
+                                            .heading__btn
+                                                button.btn GET STARTED NOW
+                                                button.btn LEARN MORE
+                </div>
+            </div>
+        .we_are#ABOUT_US
+            .container
+                .row
+                    .col.col-3.col-md-6.col-sm-6
+                        .we_are__blank
+                            .we_are__logo 
+                                .we_are__logo.we_are__logo--border
+                                .we_are__logo.we_are__logo--content <i class="fas fa-glasses"></i>
+                            .we_are__title SLEEK DESIGN
+                            .we_are__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+                    .col.col-3.col-md-6.col-sm-6
+                        .we_are__blank
+                            .we_are__logo 
+                                .we_are__logo.we_are__logo--border
+                                .we_are__logo.we_are__logo--content <i class="far fa-heart"></i>
+                            .we_are__title CLEAN CODE
+                            .we_are__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+                    .col.col-3.col-md-6.col-sm-6
+                        .we_are__blank
+                            .we_are__logo 
+                                .we_are__logo.we_are__logo--border
+                                .we_are__logo.we_are__logo--content <i class="far fa-lightbulb"></i>
+                            .we_are__title CREATIVE IDEAS
+                            .we_are__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+                    .col.col-3.col-md-6.col-sm-6
+                        .we_are__blank
+                            .we_are__logo 
+                                .we_are__logo.we_are__logo--border
+                                .we_are__logo.we_are__logo--content <i class="far fa-comments"></i>
+                            .we_are__title FREE SUPPORT
+                            .we_are__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+            hr
+        .history#HISTORY
+            .container
+                .row
+                    .col.col-6.col-md-12.col-sm-12
+                        .js-slider__wrap
+                            .js-slider
+                                img(src="./img/Monitor.png", alt="")
+                                img(src="./img/image_service.jpg", alt="")
+                                img(src="./img/img_blog_1.jpg", alt="")
+                                img(src="./img/img_blog_2.jpg", alt="")
+                            .js-btn
+                                .js-btn-left
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                .js-btn-right
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                .js-btn-play
+                                    <i class="fas fa-play-circle"></i>
+                    .col.col-6.col-md-12.col-sm-12
+                        h2 OUR HISTORY
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, when an unk- nown printer took a galley of type and scrambled it to make a type specimen book. 
+                            br
+                            br
+                            | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            br
+                        button.btn.btn--history BROWSE OUR WORK
+        .services#SERVICES
+            .container
+                .row
+                    .col.col-7.col-sm-12
+                        h2 OUR SERVICES
+                        .services__blank
+                            .services__text
+                                h4 WEB DESIGN
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+                            .services__icon
+                                <i class="fas fa-desktop"></i>
+                        .services__blank
+                            .services__text
+                                h4 PRINT DESIGN
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    br
+                                    | Lorem Ip sum has been the industry's standard dummy text ever.
+                            .services__icon
+                               <i class="far fa-file-alt"></i>
+                        .services__blank
+                            .services__text
+                                h4 PHOTOGRAPHY
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.
+                            .services__icon
+                                <i class="fas fa-camera"></i>
+        .works#PORTFOLIO
+            .container
+                .row
+                    .col
+                        h2 RECENT WORKS
+                        p It has survived not only five centuries, but also the leap scrambled it to make a type.
+                        .severance.severance--works
+                        nav.works__menu(onclick="theFunction(event)")
+                            ul.works__list
+                                each val, index in ['ALL', 'PRINT_DESIGN', 'ANIMATION', 'ART', 'WEB_DESIGN', 'PHOTOGRAPHY', 'VIDEO']
+                                    if (index == 0)
+                                        li.works__item: a(href="javascript:void(0)").works__link.works__link--active= val
+                                    else
+                                        li.works__item: a(href="javascript:void(0)").works__link= val
+            .works__kart
+                .row.no-gutters
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.PRINT_DESIGN
+                            img(src="./img/portfolio_1.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.ANIMATION
+                            img(src="./img/portfolio_2.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.ART
+                            img(src="./img/porttolio_3.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.WEB_DESIGN
+                            img(src="./img/portfolio_4.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.PHOTOGRAPHY
+                            img(src="./img/portfolio_8.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.WEB_DESIGN
+                            img(src="./img/portfolio_6.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.PHOTOGRAPHY
+                            img(src="./img/portfolio_7.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+                    .col.col-3.col-md-4.col-sm-6
+                        .works__box.VIDEO
+                            img(src="./img/portfolio_8.jpg", alt="")
+                            .works__text
+                                .works__content
+                                    h3 T-SHIRT DESIGN
+                                    p art / t-shirt
+        .study#STUDY
+            .container
+                .row
+                    .col
+                        h2 CASE STUDY
+                        p A brief story about how this process works, keep an eye till the end.
+                        .severance.severance--study
+                .row
+                    .study__content
+                        .col.col-6.col-sm-12
+                            .study__blank
+                                .study__icon
+                                    <i class="far fa-lightbulb"></i>
+                                .study__text
+                                    h4 ACCUMULATE CREATIVE IDEAS
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+                                button.btn.btn--study read more
+                            
+                        .col.col-6
+                            .study__img
+                                img(src="./img/image_study.jpg", alt="")
+        .out_stats
+            .container
+                .row.no-gutters
+                    .col
+                        .out_stats__content
+                            .out_stats__blank
+                                .out_stats__icon
+                                    <i class="far fa-heart"></i>
+                                .out_stats__text
+                                    h3 10
+                                    p User Favourites
+                            .out_stats__blank
+                                .out_stats__icon
+                                    <i class="far fa-heart"></i>
+                                .out_stats__text
+                                    h3 12
+                                    p Posts Last 24 Hours
+                            .out_stats__blank
+                                .out_stats__icon
+                                    <i class="far fa-thumbs-up"></i>
+                                .out_stats__text
+                                    h3 5
+                                    p Total Posts
+                            .out_stats__blank
+                                .out_stats__icon
+                                    <i class="far fa-star"></i>
+                                .out_stats__text
+                                    h3 300
+                                    p Campaigns
+                            .out_stats__blank
+                                .out_stats__icon
+                                    <i class="far fa-heart"></i>
+                                .out_stats__text
+                                    h3 285
+                                    p Amazing Features
+
+        .blog#BLOG
+            .container
+                .row
+                    .col   
+                        h2 OUR BLOG
+                        p Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.
+                        .severance.severance--study
+            .blog__content        
+                .row.no-gutters
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__image
+                            img(src="./img/img_blog_1.jpg", alt="") 
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__text.blog__text--right
+                            p art / t-shirt
+                            h3 T-SHIRT DESIGN
+                            .blog__excerpt
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+                            .read_more 
+                                a(href="javascript:void(0)") Read More
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__image
+                            img(src="./img/img_blog_2.jpg", alt="") 
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__text.blog__text--right
+                            p art / t-shirt
+                            h3 T-SHIRT DESIGN
+                            .blog__excerpt
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+                            .read_more 
+                                a(href="javascript:void(0)") Read More
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__text.blog__text--left
+                            p art / t-shirt
+                            h3 T-SHIRT DESIGN
+                            .blog__excerpt
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+                            .read_more 
+                                a(href="javascript:void(0)") Read More
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__image
+                            img(src="./img/img_blog_3.jpg", alt="")
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__text.blog__text--left
+                            p art / t-shirt
+                            h3 T-SHIRT DESIGN
+                            .blog__excerpt
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+                            .read_more 
+                                a(href="javascript:void(0)") Read More
+                    .col.col-3.col-md-6.col-sm-12
+                        .blog__image
+                            img(src="./img/img_blog_4.jpg", alt="")
+        .team#TEAM
+            .container
+                .row
+                    .col
+                        h2 OUR TEAM
+                        p Meet the craziest team. Share your thoughts with them.
+                        .severance.severance--team
+
+            <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 500 200" preserveAspectRatio="xMidYMid meet">
+                
+            
+                <path  class="js-bgTeam" d="M0 130 C 140 65, 250 70, 290 80 S 350 110, 500 0 L500,200 L0,200 Z">
+                </path>
+                <path class=" js-line" d="M0 130 C 140 65, 250 70, 290 80 S 350 110, 500 0" ></path>
+                <circle class="st2" cx="100" cy="90" r="15"/>
+                <circle class="st2" cx="180" cy="75" r="15"/>
+                <circle class="st2" cx="260" cy="75" r="15"/>
+                <circle class="st2" cx="340" cy="85" r="15"/>
+                <circle class="st2" cx="420" cy="50" r="15"/>
+                <image class="person" x="85" y="75" width='30' height='30' xlink:href="./img/img_team_2.png" mask="url(#person)">
+                </image>
+                <image class="person" x="165" y="60" width='30' height='30' xlink:href="./img/img_team_1.png" mask="url(#person)">
+                </image>
+                <image class="person" x="245" y="60" width='30' height='30' xlink:href="./img/img_team_3.png" mask="url(#person)">
+                </image>
+                <image class="person" x="325" y="70" width='30' height='30' xlink:href="./img/img_team_4.png" mask="url(#person)">
+                </image>
+                <image class="person" x="405" y="35" width='30' height='30' xlink:href="./img/img_team_5.png" mask="url(#person)">
+                </image>
+
+
+            </svg>
+            .team__persons
+
+        .contactus#CONTACT
+            .container
+                .row
+                    .col
+                        .contactus__title
+                            h2 KEEP IN TOUCH
+                            p Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec. 
+                            .severance.severance--study 
+                .row
+                    .col.col-5.col-md-12.col-sm-12
+                        .contactus__contact
+                            .contactus__gutter
+                            h3 OUR ADDRESS
+                            p House #13, Streat road, Sydney 
+                                br
+                                |2310 Australia
+                            .contactus__gutter
+                            h3 CALL US
+                            a(href="javascript:void(0)") +880 168 109 1425
+                            br
+                            br
+                            a(href="javaScript:void(0)") +0216809142
+                            .contactus__gutter
+                            h3 EMAIL US
+                            a(href="javascript:void(0)") contactus@email.com
+                            .contactus__gutter
+
+                    .col.col-7.col-md-12.col-sm-12   
+                        .contactus__form
+                            form(action="")
+                                .form__item
+                                    label(for="name") Name
+                                    input(type="text", name="name", id="name")
+                                    
+                                .form__item
+                                    label(for="email") Email
+                                    input(type="email", name="email", id="email")
+                                    
+                                .form__item
+                                    label(for="subject") Subject
+                                    input(type="text", name="subject", id="subject")
+                                    
+                                .form__item
+                                    label(for="message") Message
+                                    textarea(name="message", id="message" cols="30", rows="10")
+                                    br
+                                button(type="submit").btn.btn--form SEND MESSAGE
+        .promo
+            .container
+                .row
+                    .col
+                        .promo__title
+                            h2 Let's Get Started Now. It's FREE!
+                            p 30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.
+                            button.btn.btn--promo start free trial
+        footer.footer
+            .container
+                .row
+                    .col.col-8
+                        .footer__icon
+
+                        
+                            ul.footer__list
+                                - var arr = ["fab fa-facebook-f", "fab fa-twitter", "fas fa-wifi", "fab fa-google-plus-g", "fab fa-linkedin-in", "fab fa-skype", "fab fa-vimeo-v", "fab fa-tumblr"]
+                                each val, index in ["fab fa-facebook-f", "fab fa-twitter", "fas fa-wifi", "fab fa-google-plus-g", "fab fa-linkedin-in", "fab fa-skype", "fab fa-vimeo-v", "fab fa-tumblr"]
+                                    li.footer__item: a(href=`https://${arr[index]}`).footer__link
+                                        i(class=val)
+                    .col.col-4
+                        .footer__copyright Kazi Erfan © All Rights Reserved 
+
+        
+            
+        script(src="./js/script.js")
+        
+
+
+           

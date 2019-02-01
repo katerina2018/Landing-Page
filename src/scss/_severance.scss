@@ -1,0 +1,50 @@
+.severance{
+    background-color: $color-secondary;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+      
+    &::before{
+        position: absolute;
+        bottom: 2px;
+        left: calc(100%/2 - 80px - 20px);
+        width: 80px;
+        height: 2px;
+        background-color: $color-title;
+        display: block;
+        content: '';
+       
+    }
+    &::after{
+        position: absolute;
+        bottom: 2px;
+        left: calc(100%/2 + 20px);
+        width: 80px;
+        height: 2px;
+        background-color: #f4f5f9;
+        display: block;
+        content: '';
+    }
+    &--works{
+        &::before{
+            background-color: $color-textParagraf;
+        }
+        &::after{
+            background-color: $color-textParagraf;
+        }
+    }
+    &--study{
+        &::before{
+            background-color: $color-textParagraf;
+        }
+        &::after{
+            background-color: $color-textParagraf;
+        }
+    }
+}
+
+  

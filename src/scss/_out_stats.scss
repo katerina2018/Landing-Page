@@ -1,0 +1,102 @@
+.out_stats{
+    background: linear-gradient(rgba(0,0,0, 0.502), rgba(0,0,0, 0.502)), url(../img/image_stats.jpg), #030101;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $font-OpenSans;
+    text-align: center;
+    &__content{
+        min-height: 376px;
+        margin-top: 134px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    
+    }
+    &__blank{
+       position: relative;
+    }
+    &__icon{
+        width: 109px;
+        height: 109px;
+        margin-top: 25px;
+        border-radius: 50%;
+        border: 1px  solid $color-white;
+       
+        font-size: 30px;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+    }
+    &__text{
+        position: absolute;
+        top: 35%;
+        left: -43%;
+        width: 200px;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 0px;
+        margin-top: 47px;
+        letter-spacing: 0.07em;
+        color: $color-title;
+        opacity: 0;
+    }
+    .view{
+        opacity: 1;
+        transition: .3s;
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        letter-spacing: 0.0em;
+        color: $color-title;
+    }
+    
+}
+@media screen and (max-width: $small){
+    .out_stats{
+        &__content {
+            min-height: 241px;
+            margin-top: 32px;
+            padding: 0px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__blank{
+            margin-right: 18px;
+            margin-left: 18px;
+            margin-bottom: 102px;
+        }
+        &__icon {
+            width: 80px;
+            height: 80px;
+        }
+        &__text {
+            top: 60%;
+            left: -15%;
+            width: 100px;
+            h3{
+                font-size: 20px; 
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &__icon{
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+
+}

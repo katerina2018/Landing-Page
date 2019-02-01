@@ -1,0 +1,36 @@
+.promo{
+    background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url(../img/bg_promo.jpg), #202020;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 480px;
+    padding-top: 134px;
+    font-family: $font-OpenSans;
+    text-align: center;
+    color: $color-white;
+    &__title{
+        h2{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 1;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            letter-spacing: 0.01em;
+        }
+        p{
+            font-size: 18px;
+            line-height: 2;
+            padding: 0px 30px;
+            letter-spacing: 0.015em;
+            margin-top: 8px;
+            margin-bottom: 58px;
+        }
+    }
+}
+@media screen and (max-width: $small){
+    .promo{
+        padding-top: 60px;
+    }
+}
+
+  

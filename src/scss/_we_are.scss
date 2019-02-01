@@ -1,0 +1,102 @@
+.we_are{
+    text-align: center;
+    font-family: $font-OpenSans;
+    &__blank{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-bottom:102px;
+        &:hover .we_are__logo--border{
+            transform: rotate(45deg);
+            border-color:$color-secondary;
+        }
+      
+        &:hover .we_are__title{
+            color: $color-secondary;
+        }
+    }
+
+
+    &__logo{    
+        transition: .3s;
+        margin-bottom: 16px;
+        margin-top: 30px;
+        color: $color-secondary;
+        position: relative;
+        &--border{
+            border: 1px solid rgba( 153, 153, 153, 0.251 );
+            width: 71px;
+            height: 71px;
+        }
+        &--content{
+            display: block;
+            width: 71px;
+            height: 71px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        color: $color-suptitle;
+       
+        line-height: 1;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 35px;
+            left: calc(100%/2 - 41px/2);
+            height: 1px;
+            width: 41px;
+            background-color: #888;
+            content: '';
+            display: block;
+        }
+    }
+    &__text{
+       
+        font-weight: 300;
+        font-size: 12px;
+        color: $color-textParagraf;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width: $container-width-medium){
+    .we_are{
+        &__blank{
+            margin-top: 30px;
+            margin-bottom:30px;
+        }
+        &__logo {
+            margin-top: 10px;
+        }
+
+
+    }
+}
+@media screen and (max-width: $small){
+    .we_are{
+        &__blank{
+            margin-top: 30px;
+            margin-bottom:30px;
+        }
+        &__logo {
+            margin-top: 10px;
+        }
+
+
+    }
+
+
+
+}
