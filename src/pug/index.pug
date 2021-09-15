@@ -17,45 +17,41 @@ html(lang="en")
             
         header.header#HOME
             <div class="homepage-hero-module">
-                <div class="video-container">
-                    <video autoplay loop muted playsinline class="fillWidth">
-                        <source src="./video/Orange-Ripple.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                        <source src="./video/Orange-Ripple.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                    </video>
-                    .header__bg
-                    .header__content
-                        .container
-                            .row
-                                .col.col-12
-                                    .nav
-                                        .logo
-                                            a(href="#")
-                                                img(src="./img/Logo.png", alt="", srcset="")
-                                        nav.menu
-                                            button.nav__burger(onclick="burgerFunction(this)")
-                                                span.bar1
-                                                span.bar2
-                                                span.bar3
-                                            ul.menu__list
-                                                each val, index in ['HOME', 'ABOUT_US', 'HISTORY', 'SERVICES', 'PORTFOLIO', 'STUDY', 'BLOG', 'TEAM', 'CONTACT']
-                                                    if (index == 0)
-                                                        li.menu__item: a(href=`#${val}`).menu__link.menu__link--active= val
-                                                    else
-                                                        li.menu__item: a(href=`#${val}`).menu__link.menu__link= val
-                                        
-                                    .heading
+                   
+                .header__bg
+                .header__content
+                    .container
+                        .row
+                            .col.col-12
+                                .nav
+                                    .logo
+                                        a(href="#")
+                                            img(src="./img/Logo.png", alt="", srcset="")
+                                    nav.menu
+                                        button.nav__burger(onclick="burgerFunction(this)")
+                                            span.bar1
+                                            span.bar2
+                                            span.bar3
+                                        ul.menu__list
+                                            each val, index in ['HOME', 'ABOUT_US', 'HISTORY', 'SERVICES', 'PORTFOLIO', 'STUDY', 'BLOG', 'TEAM', 'CONTACT']
+                                                if (index == 0)
+                                                    li.menu__item: a(href=`#${val}`).menu__link.menu__link--active= val
+                                                else
+                                                    li.menu__item: a(href=`#${val}`).menu__link.menu__link= val
                                     
-                                        
+                                .heading
+                                
+                                    
 
-                                        h3 Our Clients Are Our First Priority
-                                        h1 WELCOME TO BINO
-                                        .severance 
-                                        p.col.col-7.col-sm-12 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        .col.col-7.col-sm-12
-                                            .heading__btn
-                                                button.btn GET STARTED NOW
-                                                button.btn LEARN MORE
-                </div>
+                                    h3 Our Clients Are Our First Priority
+                                    h1 WELCOME TO BINO
+                                    .severance 
+                                    p.col.col-7.col-sm-12 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    .col.col-7.col-sm-12
+                                        .heading__btn
+                                            button.btn GET STARTED NOW
+                                            button.btn LEARN MORE
+                
             </div>
         .we_are#ABOUT_US
             .container
@@ -92,7 +88,7 @@ html(lang="en")
         .history#HISTORY
             .container
                 .row
-                    .col.col-6.col-md-12.col-sm-12
+                    .col.col-sm-12.col-md-12.col-6
                         .js-slider__wrap
                             .js-slider
                                 img(src="./img/Monitor.png", alt="")
@@ -106,7 +102,7 @@ html(lang="en")
                                     <i class="fas fa-chevron-circle-right"></i>
                                 .js-btn-play
                                     <i class="fas fa-play-circle"></i>
-                    .col.col-6.col-md-12.col-sm-12
+                    .col.col-sm-12.col-md-12.col-6
                         h2 OUR HISTORY
                         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, when an unk- nown printer took a galley of type and scrambled it to make a type specimen book. 
                             br
@@ -153,64 +149,65 @@ html(lang="en")
                                         li.works__item: a(href="javascript:void(0)").works__link.works__link--active= val
                                     else
                                         li.works__item: a(href="javascript:void(0)").works__link= val
-            .works__kart
-                .row.no-gutters
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.PRINT_DESIGN
-                            img(src="./img/portfolio_1.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.ANIMATION
-                            img(src="./img/portfolio_2.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.ART
-                            img(src="./img/porttolio_3.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.WEB_DESIGN
-                            img(src="./img/portfolio_4.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.PHOTOGRAPHY
-                            img(src="./img/portfolio_8.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.WEB_DESIGN
-                            img(src="./img/portfolio_6.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.PHOTOGRAPHY
-                            img(src="./img/portfolio_7.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
-                    .col.col-3.col-md-4.col-sm-6
-                        .works__box.VIDEO
-                            img(src="./img/portfolio_8.jpg", alt="")
-                            .works__text
-                                .works__content
-                                    h3 T-SHIRT DESIGN
-                                    p art / t-shirt
+            .container                            
+                .works__kart
+                    .row.no-gutters
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.PRINT_DESIGN
+                                img(src="./img/portfolio_1.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.ANIMATION
+                                img(src="./img/portfolio_2.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.ART
+                                img(src="./img/porttolio_3.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.WEB_DESIGN
+                                img(src="./img/portfolio_4.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.PHOTOGRAPHY
+                                img(src="./img/portfolio_8.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.WEB_DESIGN
+                                img(src="./img/portfolio_6.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.PHOTOGRAPHY
+                                img(src="./img/portfolio_7.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
+                        .col.col-3.col-md-4.col-sm-6
+                            .works__box.VIDEO
+                                img(src="./img/portfolio_8.jpg", alt="")
+                                .works__text
+                                    .works__content
+                                        h3 T-SHIRT DESIGN
+                                        p art / t-shirt
         .study#STUDY
             .container
                 .row

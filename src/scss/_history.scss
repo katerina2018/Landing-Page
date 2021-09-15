@@ -1,57 +1,53 @@
-.history{
+.history {
     padding-top: 132px;
     font-family: $font-OpenSans;
-    .js-slider__wrap{
-        width: 506px;
+    .js-slider__wrap {
+        // width: 506px;
         height: 407px;
-        border: 1px solid #333;
+        // border: 1px solid #333;
         position: relative;
         margin: 10px auto;
-        .js-slider{
+        .js-slider {
             width: 100%;
             height: 407px;
             position: relative;
             overflow: hidden;
-            
-            img{
+            img {
                 position: absolute;
                 opacity: 1;
                 transition: all ease 1s
             }
-            .opacity0{
+            .opacity0 {
                 opacity: 0;
             }
         }
-        .js-btn{
+        .js-btn {
             display: flex;
             justify-content: center;
-            .js-btn-left, .js-btn-right, .js-btn-play {
-                width:80px;
-                height:80px;
+            .js-btn-left,
+            .js-btn-right,
+            .js-btn-play {
+                width: 80px;
+                height: 80px;
                 color: $color-secondary;
-                font-size:40px;
+                font-size: 40px;
                 display: inline-block;
                 text-align: center;
-                
                 margin: 10px;
-                i{
+                i {
                     border-radius: 50%;
-                    box-shadow: 1.5px 2.598px 5px 0px rgb( 0, 0, 0 );
+                    box-shadow: 1.5px 2.598px 5px 0px rgb( 0, 0, 0);
                 }
-                i:hover{
-                    box-shadow: inset 1px 2px 3px 0px rgb( 0, 0, 0 );
+                i:hover {
+                    box-shadow: inset 1px 2px 3px 0px rgb( 0, 0, 0);
                 }
-                .i_shadow{
-                    box-shadow: inset 1px 2px 3px 0px rgb( 0, 0, 0 );
+                .i_shadow {
+                    box-shadow: inset 1px 2px 3px 0px rgb( 0, 0, 0);
                 }
             }
         }
-        
-        
     }
-
-    
-    h2{
+    h2 {
         font-weight: 600;
         font-size: 36px;
         line-height: 1;
@@ -61,7 +57,7 @@
         letter-spacing: 0.04em;
         color: $color-suptitle;
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
             top: 2px;
             left: -16px;
@@ -72,7 +68,7 @@
             display: block;
         }
     }
-    p{
+    p {
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
@@ -81,72 +77,62 @@
         margin-left: -15px;
         margin-right: -15px;
         letter-spacing: -0.04em;
-        color: $color-textParagraf; 
+        color: $color-textParagraf;
     }
-
 }
 
-@media screen and (max-width: $container-width-medium){
-    .history{
+@media screen and (max-width: $container-width-medium) {
+    .history {
         margin-top: 0px;
         padding-top: 50px;
-        img{
+        img {
             text-align: center;
         }
-        h2{
+        h2 {
             margin-top: 30px;
-            &::before{
-                left: 0px;  
+            &::before {
+                left: 0px;
             }
-
         }
-        p{
+        p {
             margin-left: 15px;
             margin-right: 15px;
         }
-        .js-slider__wrap{
-            
+        .js-slider__wrap {
             height: auto;
             border: none;
         }
     }
-
-
 }
-@media screen and (max-width: $small){
-    .history{
+
+@media screen and (max-width: $small) {
+    .history {
         margin-top: 0px;
         padding-top: 50px;
-
-
-        .js-slider__wrap{
+        .js-slider__wrap {
             width: 100%;
-           
-            .js-slider{
+            .js-slider {
                 width: 100%;
                 height: 330px;
             }
-            .js-btn{
-                
-                .js-btn-left, .js-btn-right, .js-btn-play {
-                    width:60px;
-                    height:60px;
+            .js-btn {
+                .js-btn-left,
+                .js-btn-right,
+                .js-btn-play {
+                    width: 60px;
+                    height: 60px;
                 }
             }
         }
-        img{
+        img {
             text-align: center;
         }
-        h2{
+        h2 {
             margin-top: 10px;
-          
-
         }
-        p{
+        p {
             margin-left: 15px;
             margin-right: 15px;
         }
-        
     }
 }
-  
