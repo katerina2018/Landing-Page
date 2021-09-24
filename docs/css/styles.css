@@ -1064,6 +1064,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.wrapper-content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   height: auto;
   width: 100%;
@@ -1305,7 +1311,7 @@ img {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    background-color: #eee8e8;
+    background-color: transparent;
     margin-top: 14px;
   }
   .menu .nav__burger .bar1,
@@ -2330,6 +2336,9 @@ img {
   padding-top: 90px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .blog h2 {
   font-weight: 600;

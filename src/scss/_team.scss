@@ -1,6 +1,6 @@
-.team{
-    background: linear-gradient(rgba(0,0,0,0.749), rgba(0,0,0,.749)), url(../img/bg_team.jpg), #222222 ;
-    background-repeat:no-repeat;
+.team {
+    background: linear-gradient(rgba(0, 0, 0, 0.749), rgba(0, 0, 0, .749)), url(../img/bg_team.jpg), #222222;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: $font-OpenSans;
@@ -8,12 +8,7 @@
     padding-top: 79px;
     position: relative;
     overflow: hidden;
-     
-    
-  
-   
-      
-    h2{
+    h2 {
         font-weight: 600;
         font-size: 36px;
         line-height: 1;
@@ -23,105 +18,98 @@
         color: $color-white;
         z-index: 5;
     }
-    p{
+    p {
         font-size: 14px;
         line-height: 1;
         color: $color-title;
         padding-bottom: 16px;
-        }
+    }
     svg {
         height: 100%;
         width: 100%;
-        
-        }
-    .js-line{
-        fill:none ;
     }
-    .st1{
-        fill:red; opacity:0.5; stroke:none;
+    .js-line {
+        fill: none;
     }
-    .st0{
-        stroke: #e74c3c; stroke-width:3; stroke-miterlimit:3;
-        stroke-dasharray:2000;
-        stroke-dashoffset:0;
+    .st1 {
+        fill: red;
+        opacity: 0.5;
+        stroke: none;
+    }
+    .st0 {
+        stroke: #e74c3c;
+        stroke-width: 3;
+        stroke-miterlimit: 3;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0;
         animation: dash 10s linear forwards, color 3s linear forwards;
     }
-    @keyframes dash{
-        from{
+    @keyframes dash {
+        from {
             stroke-dashoffset: 2000;
         }
-        to{
+        to {
             stroke-dashoffset: 0;
         }
     }
-    @keyframes color{
-        from{
+    @keyframes color {
+        from {
             stroke: red;
         }
-        to{
-            stroke:  #e74c3c;
+        to {
+            stroke: #e74c3c;
         }
     }
-    .st1{
+    .st1 {
         animation: opacity 10s linear forwards;
     }
-    @keyframes opacity{
-        from{
+    @keyframes opacity {
+        from {
             opacity: 0;
         }
-        to{
+        to {
             opacity: .5;
         }
     }
-    .st2{
+    .st2 {
         cursor: pointer;
         stroke: #e74c3c;
     }
-
-    .person:hover{
+    .person:hover {
         cursor: pointer;
         border: 10px solid white;
         stroke: white;
-        stroke-width:3;
+        stroke-width: 3;
         transform: scale(1.01);
         transform-origin: 50% 50%;
     }
-    &__persons{
+    &__persons {
         position: absolute;
         bottom: 4%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         transition: .3s;
-        h3{
+        h3 {
             font-size: 24px;
             font-weight: 600;
             letter-spacing: 0.01em;
-            color:  $color-text;
-
+            color: $color-text;
         }
-        p{
-            color:$color-text;
+        p {
+            color: $color-text;
         }
-
     }
-    .hidden{
+    .hidden {
         display: none;
-    }    
-
-   
-        
-        
-        
-  
-    .person:hover img{
+    }
+    .person:hover img {
         transform: scale(1.5);
         color: white;
     }
-    .person:hover &__name{
+    .person:hover &__name {
         display: block;
     }
-
-    &__name{
+    &__name {
         margin-top: 85px;
         display: none;
         position: absolute;
@@ -129,13 +117,13 @@
         left: -50%;
         width: 125px;
         transition: .3s;
-        h3{
+        h3 {
             font-size: 24px;
             font-weight: 600;
             letter-spacing: 0.01em;
             color: $color-secondary;
             position: relative;
-            &::before{
+            &::before {
                 position: absolute;
                 top: -45px;
                 left: 50%;
@@ -145,39 +133,31 @@
                 height: 41px;
                 background: $color-secondary;
             }
-
         }
     }
-       
-                    
 }
 
-@media screen and (min-width:600px) and (max-width: $container-width-medium){
-    .team{
-        &__persons{
+@media screen and (min-width:600px) and (max-width: $container-width-medium) {
+    .team {
+        &__persons {
             bottom: -15%;
         }
-
     }
-
 }
 
-@media screen and (max-width: $small){
-    .team{
-        &__persons{
+@media screen and (max-width: $small) {
+    .team {
+        &__persons {
             bottom: -8%;
-            h3{
+            h3 {
                 font-size: 16px;
                 margin: 10px;
             }
-            p{
+            p {
                 font-size: 12px;
                 margin: 0px;
                 padding: 3px;
             }
         }
-
     }
-
-
 }
