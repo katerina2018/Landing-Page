@@ -7,12 +7,18 @@ $scrollButton.on('click', function(e) {
     }, 900);
 });
 
-// const elemIitem = document.querySelectorAll(".scroll")
-// const menu = document.querySelector(".menu__list")
-//     // elemIitem[0].onClick = menu.style.display = "none";
-// console.log(elemIitem)
+const elemIitem = document.querySelectorAll(".scroll")
+const menu = document.querySelector(".menu__list")
 
-// elemIitem[0].addEventListener("click", () => {
-//     console.log("Button was clicked");
-//     elemIitem[0].onClick = menu.style.display = "none";
-// });
+
+for (let i = 0; i < elemIitem.length; i += 1) {
+    elemIitem[i].addEventListener("click", () => {
+
+
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+}
