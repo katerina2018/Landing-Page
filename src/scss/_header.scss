@@ -38,7 +38,6 @@
         transform: translateX(-50%);
         width: 100%;
     }
-    &__content {}
     &__bg {
         position: absolute;
         top: 0px;
@@ -163,13 +162,14 @@
             height: 50px;
             background-color: transparent;
             margin-top: 14px;
+            border: 2px solid $color-suptitle;
             .bar1,
             .bar2,
             .bar3 {
                 width: 35px;
-                height: 5px;
+                height: 4px;
                 background-color: #fff;
-                margin: 6px 0;
+                margin: 8px 0;
                 transition: 0.4s;
                 display: block;
             }
