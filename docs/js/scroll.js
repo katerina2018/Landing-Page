@@ -3,7 +3,7 @@ $scrollButton.on('click', function(e) {
     e.preventDefault();
     var $link = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $($link).offset().top - 20
+        scrollTop: $($link).offset().top + 5
     }, 900);
 });
 
